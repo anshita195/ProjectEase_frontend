@@ -23,11 +23,9 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import ChatIcon from '@mui/icons-material/Chat'; 
 import TimelineIcon from '@mui/icons-material/Timeline'; 
 import Dashboard from '../containers/Dashboard';
-import Contact from '../containers/Contact';
 import Profile from '../containers/Profile';
 import Projects from '../containers/Projects';
-import  Sittings from '../containers/Sittings';
-import Timeline from '../containers/Timeline';
+import  Settings from '../containers/Settings';
 import {useNavigate} from "react-router-dom"
  
 import { Button } from '@mui/material';
@@ -75,7 +73,7 @@ const AppBar = styled(MuiAppBar, {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
-  backgroundColor: '#5F9EA0', 
+  backgroundColor: '#70428f', 
   ...(open && {
     marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
@@ -95,12 +93,12 @@ const DrawerComponent = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !=
     
     ...(open && {
       ...openedMixin(theme),
-      '& .MuiDrawer-paper': { ...openedMixin(theme), backgroundColor: '#00FFFF' }, 
+      '& .MuiDrawer-paper': { ...openedMixin(theme), backgroundColor: '#70428f' }, 
     }),
-    backgroundColor: '#770737',
+    backgroundColor: '#70428f',
     ...(!open && {
       ...closedMixin(theme),
-      '& .MuiDrawer-paper': { ...closedMixin(theme), backgroundColor: '#00FFFF' }, 
+      '& .MuiDrawer-paper': { ...closedMixin(theme), backgroundColor: '#70428f' }, 
     }),
   })
 );
@@ -143,13 +141,7 @@ export default function SideNav() {
       componentToRender = <Projects />;
       break;
     case 'Settings':
-      componentToRender = <Sittings />;
-      break;
-    case 'Chat':
-      componentToRender = <Contact />;
-      break;
-    case 'My Timeline':
-      componentToRender = <Timeline />;
+      componentToRender = <Settings />;
       break;
     default:
       componentToRender = <Dashboard />; 
@@ -175,12 +167,12 @@ export default function SideNav() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-        PROJECT HUB
+        Project Ease
       </Typography>
           <Button sx={{
             marginLeft:open? 110:130
         } } variant="contained" onClick={startNewProject}>
-        Start New Project
+        Create New Project
       </Button>
           <div >
     <div>
@@ -204,12 +196,10 @@ export default function SideNav() {
         <Divider />
         <List>
           {[
-            { text: 'Dashboard', icon: <DashboardIcon /> },
             { text: 'Profile', icon: <AccountCircleIcon /> },
             { text: 'Projects', icon: <AssignmentIcon /> },
+            { text: 'Main Dashboard', icon: <DashboardIcon /> },
             { text: 'Settings', icon: <SettingsIcon /> },
-            { text: 'Chat', icon: <ChatIcon /> },
-            { text: 'My Timeline', icon: <TimelineIcon /> },
           ].map((item, index) => (
             <ListItem key={item.text} disablePadding sx={{ display: 'block' }}
             onClick={() => handleMenuItemClick(item.text)}>
@@ -219,7 +209,8 @@ export default function SideNav() {
                   justifyContent: open ? 'initial' : 'center',
                   px: 2.5,
                   '&:hover': {
-                    backgroundColor: '#5F9EA0', 
+                    backgroundColor: '#70428f',
+                    color:'#FFFFFF' 
                   }
                 }}
               >
@@ -229,7 +220,7 @@ export default function SideNav() {
                     mr: open ? 3 : 'auto',
                     justifyContent: 'center',
                     '&:hover': {
-                      backgroundColor: '#5F9EA0', 
+                      backgroundColor: '#70428f', 
                     }
                   }}
                 >

@@ -36,10 +36,10 @@ const  CreateCardModel= props=> {
    
     
   }
-  const priorityList=[{
-    value:1,label:"Urgent"},
+  const priorityList=[
+    {value:1,label:"Urgent"},
     {value:2,label:"Important"},
-    {value:3,label:"Take time"
+    {value:3,label:"Can take time"
 
   }]
   useEffect(() => {
@@ -317,7 +317,6 @@ const  CreateCardModel= props=> {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary">Understood</Button>
         </Modal.Footer>
       </Modal>
     </>

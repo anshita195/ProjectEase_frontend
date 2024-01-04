@@ -75,10 +75,6 @@ export default function ProfilePage() {
                   fluid />
                 <p className="text-muted mb-1">Student and Maintainer</p>
                 <p className="text-muted mb-4">IIT ROORKEE</p>
-                <div className="d-flex justify-content-center mb-2">
-               
-                  <MDBBtn outline className="ms-1">Message</MDBBtn>
-                </div>
               </MDBCardBody>
             </MDBCard>
 
@@ -152,7 +148,7 @@ export default function ProfilePage() {
               </MDBCardBody>
             </MDBCard>
 
-            <MDBRow>
+            {/* <MDBRow>
               <MDBCol md="6">
                 <MDBCard className="mb-4 mb-md-0">
                   <MDBCardBody>
@@ -216,7 +212,7 @@ export default function ProfilePage() {
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
-            </MDBRow>
+            </MDBRow> */}
           </MDBCol>
         </MDBRow>
       </MDBContainer>

@@ -66,7 +66,7 @@ function ProjectDetailNavbar({ users, onButtonAction }) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: '#630330' }}>
+      <AppBar component="nav" sx={{ backgroundColor: '#70428f' }}>
         <Toolbar>
           <IconButton
             color="inherit"

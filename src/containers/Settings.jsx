@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@mui/material';
 
-const Sittings = () => {
+const Settings = () => {
   const token=localStorage.getItem('token')
   if (token === null) {
     return (
@@ -23,4 +23,4 @@ const Sittings = () => {
   )
 }
 
-export default Sittings
+export default Settings

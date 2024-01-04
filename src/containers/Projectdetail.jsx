@@ -80,7 +80,7 @@ const UserTable = ({ users,setOpenTable }) => {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', }}>
         <TableContainer component={Paper} style={{ maxWidth: '600px',height:'50vh',marginTop:100 }}>
           <Table>
-            <TableHead  style={{backgroundColor:'#630330',color:'white'}}>
+            <TableHead  style={{backgroundColor:'#70428f',color:'white'}}>
               <TableRow>
                 <TableCell style={{ color: 'white' }}>Serial No.</TableCell>
                 {/* <TableCell  style={{ color: 'white' }}>Profile</TableCell> */}
@@ -147,11 +147,11 @@ const Cardslist=()=>{
   const getCardColor = (priority) => {
     switch (priority) {
       case 3:
-        return '#FF4040';
+        return '#b4edc5';
       case 2:
-        return 'yellow';
+        return '#ecedb4';
       default:
-        return '#59E659';
+        return '#f76a6a';
     }
   };
   
@@ -193,12 +193,12 @@ const Cardslist=()=>{
                           title= {card.card_name.toUpperCase()}
                           subheader={card.date_of_creation}
                         />
-                        <CardContent>
+                        {/* <CardContent>
                         <Typography variant="body2" color="text.secondary">
-                                 <h1>HELLO</h1>
+                                 <h6>content</h6>
                              
                             </Typography>
-                        </CardContent>
+                        </CardContent> */}
                         <CardActions >
                           
                           <ExpandMore

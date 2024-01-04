@@ -64,13 +64,13 @@ const Login = () => {
        <Card sx={{minWidth: 275, width: '400px', height:'400px',display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor:'#FCF5E5' ,
+        backgroundColor:'#CBC3E3' ,
         boxShadow: '10px 10px 10px rgba(0.9, 0.9, 0.9, 0.9)'}}>
        <CardContent>
       
       <div className="appName">
-      <Typography variant="h3" fontWeight="bold"  style={{ marginBottom: '60px',marginLeft:'20px',color:'#191970',fontFamily: 'Copperplate',}}>
-            Welcome to PROJECTHUB
+      <Typography variant="h3" fontWeight="bold"  style={{ marginBottom: '60px',marginLeft:'20px',color:'#000000',fontFamily: 'Copperplate',}}>
+              ProjectEase App
       </Typography>
         
        
@@ -81,7 +81,6 @@ const Login = () => {
           className="button"
           variant="contained"
           color="primary"
-          startIcon={<LockIcon />}
           onClick={handleLogin}
         >
          <Typography  variant="h6" fontWeight="bold" style={{color:'white',fontFamily: 'Brush Script',}}>

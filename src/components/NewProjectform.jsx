@@ -93,12 +93,12 @@ export default function AddressForm() {
       <form>
         <Box height={25} />
         <Typography variant="h3" color="primary" align="center" fontFamily="Cinzel">
-          "Let's Get Started on Your New Project!"
+          Create New Project
         </Typography>
         <Paper elevation={3} sx={{ marginLeft: "15%", marginRight: "15%", marginTop: '1%', backgroundColor: "#D8BFD8", boxShadow: "10px 10px 10px 10px gray", height: '600px' }}>
           <Box sx={{ padding: 5 }}>
             <Typography variant="h4" gutterBottom sx={{ paddingBottom: 5 }}>
-              PROJECT HUB
+              Project Ease
             </Typography>
 
             <Grid container spacing={3}>
@@ -222,7 +222,7 @@ export default function AddressForm() {
               <Grid item xs={12} sm={6} />
               <Grid item xs={12} sm={5} />
               <Grid item xs={12} sm={4}>
-                <Button variant="contained" sx={{ color: "red" }} onClick={handleSubmit}>
+                <Button variant="contained" sx={{ color: "white" }} onClick={handleSubmit}>
                   Save
                 </Button>
               </Grid>

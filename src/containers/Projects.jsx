@@ -49,21 +49,21 @@ const Projects = () => {
   return (
     <div>
        <Typography variant="h3" color="primary" align="center" fontFamily="Cinzel">
-          MY PROJECTS
+          My Projects
         </Typography >
         <Box height={40} />
         <Grid container spacing={7}>
           {userProjects.map((project) => (
             <Grid item xs={4} key={project.project_id}>
-              <Card sx={{ minWidth: 275, backgroundColor:'#C2B280'}}>
+              <Card sx={{ minWidth: 275, backgroundColor:'#d3c9f2'}}>
                 <CardContent>
                   <Typography variant="h4" fontFamily="Cinzel" color="text.secondary" gutterBottom>
                     <Typography variant="h4" fontFamily="Kanit" color="text.secondary" align="center" >
-                      CREATOR:{project.project.creator.toUpperCase()}
+                      Creator: {project.project.creator}
                     </Typography>
                   </Typography>
                   <Typography variant="h4" fontFamily="Kanit" color="purple" align="center" fontWeight="bold">
-                    {project.project.name.toUpperCase()}
+                    {project.project.name}
                   </Typography>
                   <Box height={25} />
                   <Typography variant="h5" color="black" fontFamily="Cinzel" align="center">
@@ -73,7 +73,7 @@ const Projects = () => {
                 </CardContent>
                 <CardActions>
                   <Button variant="contained" size="small" endIcon={<ArrowForwardIcon />}  onClick={() => exploreProject(project.project.project_id,project.project.name)}>
-                    Explore
+                    View project 
                   </Button>
                 </CardActions>
               </Card>

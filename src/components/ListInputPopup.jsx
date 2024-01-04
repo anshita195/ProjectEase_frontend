@@ -105,7 +105,7 @@ const ListInputPopup = ({ onClose }) => {
               </Grid>
               
               <Grid item xs={12} sm={4}>
-                <Button variant="contained" sx={{ color: "red" }} onClick={handleSubmit}>
+                <Button variant="contained" sx={{ color: "white" }} onClick={handleSubmit}>
                   Create
                 </Button>
               </Grid>
